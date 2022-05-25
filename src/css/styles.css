@@ -4,16 +4,17 @@
     left: 0;
     width: 100%;
     padding: 16px 0;
-    background-color: #2d22d3;
+    background-color: #ff0000;
     box-shadow: 0 10px 8px -5px rgb(112 125 127 / 80%);
     z-index: 10;
 }
 .search-form {
     display: flex;
-    height: 40px;
+    height: 50px;
     width: max-content;
     margin: 0 auto;
-    border: 1px solid #434343;
     border-radius: 4px;
     overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%);
 }
