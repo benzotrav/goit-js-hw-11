@@ -18,3 +18,10 @@
     border-radius: 7px;
     box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%);
 }
+.search-form input {
+    width: 270px;
+    padding: 5px 10px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+  }
