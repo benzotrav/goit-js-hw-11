@@ -1,6 +1,5 @@
-import './sass/main.scss';                                               
-import throttle from 'lodash.throttle';                                 
-import SimpleLightbox from 'simplelightbox';                               
+import throttle from 'lodash.throttle';
+import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import  photoCardsTpl from './hbs/addNewFiles.hbs';                
 import imageApiService from './js/searcher.js';
