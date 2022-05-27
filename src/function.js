@@ -4,6 +4,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import  photoCardsTpl from './hbs/addNewFiles.hbs';                
 import imageApiService from './js/searcher.js';
 import Notiflix from 'notiflix';              
+import throttle from 'lodash.throttle';                                 
 
 const refs = {                                                              
    searchForm: document.querySelector('#search-form'),                     
