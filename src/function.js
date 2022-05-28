@@ -71,22 +71,22 @@ const onEntry = entries => {
 const observer = new IntersectionObserver(onEntry, {
   rootMargin: '150px',
 });
-observer.observe(refs.sentinel);
+// observer.observe(refs.sentinel);
 
 const offset = 700;
 const scrollUp = document.querySelector('.scroll-up');
 const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
 
-window.addEventListener('scroll', () => {
-    if (getTop() > offset) {
-        scrollUp.classList.add('scroll-up__active');
-    } else {
-        scrollUp.classList.remove('scroll-up__active');
-    }
-});
-scrollUp.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-})
+// window.addEventListener('scroll', () => {
+//     if (getTop() > offset) {
+//         scrollUp.classList.add('scroll-up__active');
+//     } else {
+//         scrollUp.classList.remove('scroll-up__active');
+//     }
+// });
+// scrollUp.addEventListener('click', () => {
+//     window.scrollTo({
+//         top: 0,
+//         behavior: 'smooth'
+//     });
+// })
