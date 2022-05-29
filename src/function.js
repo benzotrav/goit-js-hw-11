@@ -3,7 +3,7 @@ import Notiflix from 'notiflix';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 import pictureCard from './hbs/cards.hbs';
-import API from './api/getPicters.js';
+import API from './js/searcher.js';
 
 const refs = {
     formEl: document.querySelector('.search-form'),
