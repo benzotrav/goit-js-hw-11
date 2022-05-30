@@ -12,7 +12,7 @@ const refs = {
 
 async function renderGallery() {
     const result = await API.getPicters();
-    appendPicters(result.data.totalHits);
+    appendPicters(result.data.total);
     
 }
 const lightbox = new SimpleLightbox('.gallery a', {
@@ -37,12 +37,12 @@ function onSearch(e) {
     API.getPicters().then(({ data } = {}) => {
         appendPicters(data.hits);
         lightbox.refresh();
-        if (data?.totalHits === 0) {
+        if (data?.total === 0) {
             Notiflix.Notify.failure('Sorry, there are no images matching your search query. Please try again');
             return;
         }        
-            if (data?.totalHits !== 0) {
-                Notiflix.Notify.success(`Hooray! We found ${data.totalHits} images!`);
+            if (data?.total !== 0) {
+                Notiflix.Notify.success(`Hooray! We found ${data.total} images!`);
         }       
     });    
 }   
